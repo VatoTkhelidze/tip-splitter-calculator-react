@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tip-splitter-calculator-react/static/css/main.0163aae7.css",
+    "main.js": "/tip-splitter-calculator-react/static/js/main.d2c9c77b.js",
+    "index.html": "/tip-splitter-calculator-react/index.html",
+    "main.0163aae7.css.map": "/tip-splitter-calculator-react/static/css/main.0163aae7.css.map",
+    "main.d2c9c77b.js.map": "/tip-splitter-calculator-react/static/js/main.d2c9c77b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0163aae7.css",
+    "static/js/main.d2c9c77b.js"
+  ]
+}
