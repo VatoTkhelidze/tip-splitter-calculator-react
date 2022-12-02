@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-function TipPercents(){
+function TipPercents({setButtonValue,setCustom, custom}){
     return(
         <PercentsContainer>
-            <PercentButton>5%</PercentButton>
-            <PercentButton>10%</PercentButton>
-            <PercentButton>15%</PercentButton>
-            <PercentButton>25%</PercentButton>
-            <PercentButton>50%</PercentButton>
-            <PercentCustom placeholder="Custom" type='number'></PercentCustom>
+            <PercentButton onClick={()=>setButtonValue(5)}>5%</PercentButton>
+            <PercentButton onClick={()=>setButtonValue(10)}>10%</PercentButton>
+            <PercentButton onClick={()=>setButtonValue(15)}>15%</PercentButton>
+            <PercentButton onClick={()=>setButtonValue(25)}>25%</PercentButton>
+            <PercentButton onClick={()=>setButtonValue(50)}>50%</PercentButton>
+            <PercentCustom onChange={(e)=>setCustom(e.target.value)} value={custom} placeholder="Custom" type='number'></PercentCustom>
         </PercentsContainer>
     );
 };
@@ -33,6 +33,10 @@ const PercentCustom = styled.input`
         -webkit-appearance: none;
         margin: 0;
     }
+    @media only screen and (min-width: 768px){
+        width: 102px;
+        height: 48px;
+    }
 `
 
 
@@ -54,6 +58,10 @@ const PercentButton = styled.button`
         background: #26C2AE;
         color: #00474B;
     };
+    @media only screen and (min-width: 768px){
+        width: 117px;
+        height: 48px;
+    }
 `
 
 const PercentsContainer = styled.div`
@@ -62,6 +70,9 @@ const PercentsContainer = styled.div`
     gap: 16px;
     margin-top: 10px;
     width: 100%;
+    @media only screen and (min-width: 768px){
+        grid-template-columns: auto auto auto;
+    }
 `
 
 export default TipPercents;
